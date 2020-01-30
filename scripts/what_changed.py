@@ -83,10 +83,22 @@ def main():
                 "labels": ["area: C Library"]
                 },
             {
+                "area": "DTS Bindings",
+                "regex" : ["^dts/bindings"],
+                "counter": 0,
+                "labels": ["area: Device Tree Binding"]
+                },
+            {
                 "area": "DTS",
                 "regex" : ["^dts", ".dts"],
                 "counter": 0,
                 "labels": ["area: Device Tree"]
+                },
+            {
+                "area": "DTS Tooling",
+                "regex" : ["^scripts/dts", "cmake/dts.cmake", "scripts/kconfig/kconfigfunctions.py"],
+                "counter": 0,
+                "labels": ["area: Device Tree Tooling"]
                 },
             {
                 "area": "Watchdog",
